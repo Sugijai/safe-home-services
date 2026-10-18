@@ -12,7 +12,7 @@ export default function Home() {
       fontWeight: 700,
       lineHeight: 1.5,
     }}>
-              DRAIN/SINK/TOILET CHOKE REPAIR
+              DRAIN/ SINK/ TOILET CHOKE REPAIR
               <br />
               <strong>Service Done within 24 Hours</strong>
             </div>
