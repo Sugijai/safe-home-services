@@ -138,7 +138,7 @@ export default function Home() {
                 overflowWrap: "anywhere",
               }}
             >
-              DRAIN/SINK/TOILET CHOKE REPAIR
+              DRAIN, SINK, TOILET CHOKE REPAIR
               <br />
 
               <strong
@@ -233,7 +233,7 @@ export default function Home() {
               }}
             >
               <WhatsAppIcon />
-              <span>Schedule Online</span>
+              <span>WhatsApp</span>
             </a>
 
             <Link
