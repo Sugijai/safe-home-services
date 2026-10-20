@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import "./globals.css";
-import WhatsAppChat from "@/components/WhatsAppChat";
+import FloatingContact from "@/components/FloatingContact";
+import "@/components/FloatingContact.css";
+
 
 export const metadata: Metadata = { title: { default: "All Choke Services Singapore | Safe Home Services", template: "%s | Safe Home Services" }, description: "A plumbing service enquiry website for Singapore. Tell us about your home plumbing problem.", robots: { index: false, follow: false } };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en-SG"><body><a className="skip" href="#main">Skip to content</a><div className="demo">Same Day Service Available, book now</div><header><Link className="logo" href="/"><span className="mark">◉</span>{site.name}<small>HOME PLUMBING SERVICES</small></Link><nav aria-label="Main navigation"><Link href="/">Home</Link><Link href="/services">Services</Link><Link href="/#faq">FAQs</Link><a
-  href="tel:+6590361057"
+  href="tel:+6584171005"
   aria-label="Call +65 84171005"
   style={{
     display: "inline-flex",
@@ -31,7 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   <span>+65 84171005</span>
 </a><a
-  href="https://wa.me/6590361057"
+  href="https://wa.me/6584171005"
   target="_blank"
   rel="noopener noreferrer"
   className="button small"
@@ -54,4 +56,4 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   </svg>
 
   <span>Schedule Online</span>
-</a></nav></header><main id="main">{children}</main><footer><div><Link className="footer-brand" href="/">{site.name}</Link><p>A better flow for everyday living.</p><small>Demo website. Business identity, technician availability and service areas must be confirmed before launch.</small></div><div><Link href="/services">Explore services</Link><Link href="/book">Repair enquiry</Link><Link href="/privacy">Privacy notice</Link></div><p className="fine">Plumbing service concept. Qualifications, service coverage and business details must be confirmed before launch.</p></footer> <WhatsAppChat /></body></html> }
+</a></nav></header><main id="main">{children}</main><footer><div><Link className="footer-brand" href="/">{site.name}</Link><p>A better flow for everyday living.</p><small>Demo website. Business identity, technician availability and service areas must be confirmed before launch.</small></div><div><Link href="/services">Explore services</Link><Link href="/book">Repair enquiry</Link><Link href="/privacy">Privacy notice</Link></div><p className="fine">Plumbing service concept. Qualifications, service coverage and business details must be confirmed before launch.</p></footer><FloatingContact /></body></html> }

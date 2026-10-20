@@ -11,28 +11,28 @@ const services = [
   {
     title: "Emergency Choke Clearing",
     bookingService: "Blocked drain",
-    image: "/images/img1.jpg",
+    image: "/emergency-choke.png",
     description:
       "Blocked drain, sink or toilet? Tell us about the blockage and request a service visit. Our team will confirm the scope of work and earliest available appointment.",
   },
   {
     title: "Leak Repairs",
     bookingService: "Pipe repair",
-    image: "/images/img2.jpg",
+    image: "/leak-repaires.png",
     description:
       "Get help with leaking pipes, taps, wash basins and toilet fixtures. Describe where the leak is occurring so we can discuss an assessment and suitable repair.",
   },
   {
     title: "Water Heater Services",
     bookingService: "Other",
-    image: "/images/img3.jpg",
+    image: "/water-Heater.png",
     description:
       "Enquire about water heater installation, repairs, plumbing leaks or replacement. Share your heater type and symptoms so the team can check the required work.",
   },
   {
     title: "General Plumbing Repairs",
     bookingService: "Tap repair or replacement",
-    image: "/images/img4.jpg",
+    image: "/general-plumbing-repair.png",
     description:
       "From dripping taps and shower problems to basin installation and toilet repairs, tell us what needs attention and request a quotation.",
   },
@@ -264,12 +264,12 @@ export default function ServicesPage() {
           {[
             {
               label: "Before",
-              image: "/images/before.jpg",
+              image: "/before.png",
               caption: "Example: the plumbing issue before repair.",
             },
             {
               label: "After",
-              image: "/images/after.jpg",
+              image: "/after.png",
               caption: "Example: the completed repair.",
             },
           ].map((item) => (

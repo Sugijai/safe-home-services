@@ -172,3 +172,102 @@
     bottom: calc(16px + env(safe-area-inset-bottom));
   }
 }
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.safe-visual {
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  margin: 0;
+}
+
+.safe-technician {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+.floating-contact {
+  position: fixed;
+  top: 50%;
+  right: max(12px, env(safe-area-inset-right));
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.floating-contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 140px;
+  min-height: 52px;
+  padding: 12px 18px;
+  border-radius: 28px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 20%);
+}
+
+.floating-contact-link svg {
+  flex-shrink: 0;
+}
+
+.floating-call {
+  background: #176b45;
+  color: #ffffff;
+}
+
+.floating-whatsapp {
+  background: #90ee90;
+  color: #075e54;
+}
+
+.floating-contact-link:hover {
+  filter: brightness(0.95);
+}
+
+.floating-contact-link:focus-visible {
+  outline: 3px solid #e2ad23;
+  outline-offset: 4px;
+}
+
+/* Compact buttons reduce how much content they cover on phones. */
+@media (max-width: 600px) {
+  .floating-contact {
+    right: max(8px, env(safe-area-inset-right));
+    gap: 8px;
+  }
+
+  .floating-contact-link {
+    flex-direction: column;
+    gap: 4px;
+    min-width: 70px;
+    min-height: 68px;
+    padding: 10px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+  }
+}
