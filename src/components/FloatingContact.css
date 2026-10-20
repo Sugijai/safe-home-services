@@ -1,0 +1,99 @@
+.floating-contact {
+  position: fixed;
+  top: auto;
+  right: auto;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  box-sizing: border-box;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  padding: 8px;
+
+  border-radius: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 20%);
+}
+
+.floating-contact-link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  box-sizing: border-box;
+  min-width: 130px;
+  min-height: 48px;
+  padding: 12px 18px;
+
+  border-radius: 28px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.floating-contact-link svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.floating-call {
+  background-color: #176b45;
+  color: #ffffff;
+}
+
+.floating-whatsapp {
+  background-color: #90ee90;
+  color: #075e54;
+}
+
+.floating-contact-link:hover {
+  filter: brightness(0.95);
+}
+
+.floating-contact-link:focus-visible {
+  outline: 3px solid #e2ad23;
+  outline-offset: 3px;
+}
+
+/* Keeps the bar from covering the final page content. */
+body {
+  padding-bottom: calc(100px + env(safe-area-inset-bottom));
+}
+
+@media (max-width: 600px) {
+  .floating-contact {
+    bottom: calc(10px + env(safe-area-inset-bottom));
+    gap: 8px;
+    padding: 6px;
+  }
+
+  .floating-contact-link {
+    min-width: 0;
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 340px) {
+  .floating-contact-link {
+    gap: 6px;
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .floating-contact-link svg {
+    width: 20px;
+    height: 20px;
+  }
+}
