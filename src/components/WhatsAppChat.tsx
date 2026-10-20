@@ -10,7 +10,7 @@ export default function WhatsAppChat() {
   const phoneNumber = "6584171005";
 
   const message = encodeURIComponent(
-    "Hello Safe Home Services, I need help with a plumbing issue."
+    "Hello , I need help with a Toilet Choke repair issue."
   );
 
   return (
