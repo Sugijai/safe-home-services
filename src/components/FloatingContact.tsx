@@ -3,7 +3,7 @@ export default function FloatingContact() {
   const phoneNumber = "6584171005";
 
   const message = encodeURIComponent(
-    "Hello Safe Home Services, I need plumbing assistance."
+    "Hello , I need toilet choke repair assistance."
   );
 
   return (
