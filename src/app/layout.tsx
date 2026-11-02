@@ -6,7 +6,7 @@ import FloatingContact from "@/components/FloatingContact";
 import "@/components/FloatingContact.css";
 
 
-export const metadata: Metadata = { title: { default: "All Choke Services Singapore | Safe Home Services", template: "%s | Safe Home Services" }, description: "A plumbing service enquiry website for Singapore. Tell us about your home plumbing problem.", robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: { default: "All Choke Services Singapore | Safe Home Services", template: "%s | Safe Home Services" }, description: "A plumbing service enquiry website for Singapore. Tell us about your home plumbing problem.", robots: { index: true, follow: true } };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en-SG"><body><a className="skip" href="#main">Skip to content</a><div className="demo">Same Day Service Available, book now</div><header><Link className="logo" href="/"><span className="mark">◉</span>{site.name}<small> All kind of choke repair and plumbing works</small></Link><nav aria-label="Main navigation"><Link href="/">Home</Link><Link href="/services">Services</Link><Link href="/#faq">FAQs</Link><a
   href="tel:+6584171005"
   aria-label="Call +65 84171005"
